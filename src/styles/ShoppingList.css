@@ -1,0 +1,75 @@
+.lmj-shopping-list {
+    width: 100%;
+}
+
+.lmj-recipe-list {
+    list-style-type: none;
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lmj-recipe-item {
+    border: solid 2px #31b572;
+    border-radius: 10px;
+    width: 230px;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.lmj-recipe-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background-color: #f9fffb;
+}
+
+.lmj-recipe-item-cover {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.category-filter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.category-filter button {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.category-filter button:hover {
+    border-color: #ff6b35;
+}
+
+.category-filter button.active {
+    background: #ff6b35;
+    color: white;
+    border-color: #ff6b35;
+}
+
+.lmj-plant-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
